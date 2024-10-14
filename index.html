@@ -90,6 +90,8 @@
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>CashBank</title>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -125,17 +127,31 @@
         <div class="hero">
           <section class="inner">
             <span class="hero-slogan header-slogan">Digital Smart Wallet</span>
-            <h1 class="hero__title">
+            <h1
+              class="hero__title"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+            >
               Digital <span class="hero__title-payment">Payment</span> For
               Everyone.
             </h1>
-            <p class="header-desc hero__desc">
+            <p
+              class="header-desc hero__desc"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="700"
+            >
               We bring together eveything that’s required to build websites and
               apps that accept payments and send payouts globally. We are the
               best platform.
             </p>
 
-            <div class="hero__contact">
+            <div
+              class="hero__contact"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
+            >
               <input
                 type="email"
                 name=""
@@ -148,15 +164,30 @@
               />
               <button class="btn hero__button">Get Started</button>
             </div>
-            <strong class="hero__strong"
+            <strong
+              class="hero__strong"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1300"
               >*We’ll respect the inbox and never share your email.</strong
             >
           </section>
 
           <div class="media">
-            <img src="./assets/icons/mobie.svg" alt="" class="media__mobile" />
+            <img
+              src="./assets/icons/mobie.svg"
+              alt=""
+              class="media__mobile"
+              data-aos="zoom-in-down"
+              data-aos-easing="ease-in-sine"
+            />
             <!-- Deposite -->
-            <div class="deposite">
+            <div
+              class="deposite"
+              data-aos="flip-left"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
+            >
               <img
                 src="./assets/icons/deposite.svg"
                 alt="deposite"
@@ -166,7 +197,12 @@
               <span class="deposite__money">$32000</span>
             </div>
             <!-- Funds -->
-            <div class="funds">
+            <div
+              class="funds"
+              data-aos="flip-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2000"
+            >
               <img
                 src="./assets/icons/money.svg"
                 alt="deposite"
@@ -178,7 +214,12 @@
               </div>
             </div>
             <!-- Interest -->
-            <div class="interest">
+            <div
+              class="interest"
+              data-aos="flip-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+            >
               <span class="interest__per">0%</span>
               <span class="interest__desc">Interest</span>
             </div>
@@ -198,16 +239,25 @@
                 src="./assets/icons/work-01.svg"
                 alt="work-01"
                 class="work__layout"
+                data-aos="fade-right"
+                data-aos-easing="linear"
               />
               <img
                 src="./assets/icons/work-02.svg"
                 alt="work-02"
                 class="work__icon"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
               />
               <img
                 src="./assets/icons/work-03.png"
                 alt="work-03"
                 class="work__staff"
+                data-aos="zoom-in-up"
+                data-aos-duration="700"
+                data-aos-easing="linear"
+                data-aos-anchor=".header-title"
               />
             </div>
             <!-- info -->
@@ -215,9 +265,21 @@
               <span class="header-slogan work__slogan"
                 >Digital Smart Wallet</span
               >
-              <h2 class="header-title">How It Works</h2>
+              <h2
+                class="header-title"
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-sine"
+              >
+                How It Works
+              </h2>
               <div class="account">
-                <div class="account__check">
+                <div
+                  class="account__check"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                >
                   <h3 class="account__title">
                     1. Open a High Interest Checking account
                   </h3>
@@ -227,7 +289,12 @@
                   </p>
                 </div>
 
-                <div class="account__check">
+                <div
+                  class="account__check"
+                  data-aos="fade-left"
+                  data-aos-duration="1300"
+                  data-aos-easing="ease-in-sine"
+                >
                   <h3 class="account__title">
                     2. 10 point-of-sale transactions each Month that are at
                     least $10 each.
@@ -238,7 +305,12 @@
                   </p>
                 </div>
 
-                <div class="account__check">
+                <div
+                  class="account__check"
+                  data-aos="fade-left"
+                  data-aos-duration="1600"
+                  data-aos-easing="ease-in-sine"
+                >
                   <h3 class="account__title">3. Receive up to 5.50% APY</h3>
                   <p class="account-desc">
                     The APY you earn will be based on your account balance and
@@ -651,6 +723,12 @@
         >
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        mirror: true,
+      });
+    </script>
   </body>
 </html>
